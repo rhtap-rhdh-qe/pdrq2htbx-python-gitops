@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: pdrq2htbx-python-gitops
+  description: This is GitOps manifest for pdrq2htbx-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: pdrq2htbx-python
+    janus-idp.io/tekton: pdrq2htbx-python 
+    backstage.io/kubernetes-id: pdrq2htbx-python 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:pdrq2htbx-python

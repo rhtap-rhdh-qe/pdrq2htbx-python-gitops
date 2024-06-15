@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: pdrq2htbx-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/pdrq2htbx-python
